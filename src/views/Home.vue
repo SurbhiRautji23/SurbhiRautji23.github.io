@@ -1,18 +1,20 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <v-parallax dark src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
+    <v-layout align-center column justify-center>
+      <h1 class="display-2 font-weight-thin mb-3">Stay Tuned!</h1>
+      <h4 class="subheading">
+        For now, Please
+        <a href="./SurbhiRautjiResume.pdf" target="_blank">click here</a> to download resume!
+      </h4>
+    </v-layout>
+  </v-parallax>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-
-@Component({
-  components: {
-    HelloWorld,
-  },
-})
-export default class Home extends Vue {}
+<script>
+export default {
+  name: 'HomeComponent',
+};
 </script>
+
+<style>
+</style>
