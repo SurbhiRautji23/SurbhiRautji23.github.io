@@ -56,4 +56,72 @@ export default class ResumeData {
       ],
     },
   });
+
+  static educationDetails: object = () => ({
+    data: [
+      {
+        startDate: 'Aug, 2014',
+        endDate: 'May, 2016',
+        degree: 'Master of Science',
+        shortDegree: 'MS',
+        major: 'Software Engineering',
+        school: 'San Jose State University',
+        schoolType: 'University',
+        description: '',
+        courses: [],
+      },
+      {
+        startDate: 'Aug, 2008',
+        endDate: ' June, 2012',
+        degree: 'Bachelor of Technology',
+        shortDegree: 'B.Tech',
+        major: 'Computer Science and Engineering',
+        school: 'Amity University, Noida',
+        schoolType: 'University',
+        description: '',
+        courses: [],
+      },
+    ],
+  });
+
+  static experience: object = () => ({
+    data: [
+      {
+        startDate: 'March, 2019',
+        endDate: 'June, 2019',
+        companyName: '3K Technologies, Inc.',
+        designation: 'Software Quality Assurance Engineer (Contract)',
+        jobDuties: [],
+        skills: [],
+        description: '',
+      },
+      {
+        startDate: 'Sept, 2016',
+        endDate: 'Present',
+        companyName: 'Hanumayamma Innovations and Technologies, Inc',
+        designation: 'Software Engineer',
+        jobDuties: [],
+        skills: [],
+        description: '',
+      },
+      {
+        startDate: 'Aug, 2015',
+        endDate: 'Nov, 2015',
+        companyName: 'NetScout Systems',
+        designation: 'Software Engineer Intern',
+        jobDuties: [],
+        skills: [],
+        description: '',
+      },
+      {
+        startDate: 'Feb, 2013',
+        endDate: 'Feb, 2014',
+        companyName: 'Oracle Corporation India Pvt. Ltd.',
+        designation: 'Sales Engineer',
+        jobDuties: [],
+        skills: [],
+        description: '',
+      },
+    ],
+  });
 }

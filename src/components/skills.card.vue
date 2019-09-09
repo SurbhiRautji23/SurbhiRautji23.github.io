@@ -7,18 +7,18 @@
       :outlined="outlined"
       :elevation="elevation"
       :raised="raised"
-      :width="width"
       :height="height"
     >
-      <v-img v-if="media" class="white--text" height="200px" :src="SImg">
+      <v-img v-if="media" class="white--text" height="120px" :src="SImg">
         <!-- <v-card-title class="align-end fill-height">{{ skills.key }}</v-card-title> -->
       </v-img>
-      <v-card-title class="headline mb-1">{{ skills.key }}</v-card-title>
+      <v-card-title class="headline" primary-title>{{ skills.key }}</v-card-title>
 
-      <v-card-text>
-        <v-chip v-for="skill in skills.data" v-bind:key="skill">{{ skill }}</v-chip>
+      <v-card-text color="secondary">
+        <v-chip class="caption" v-for="skill in skills.data" v-bind:key="skill">{{ skill }}</v-chip>
       </v-card-text>
     </v-card>
+    <v-divider :vertical="vertical" light></v-divider>
   </div>
 </template>
 
@@ -37,15 +37,15 @@ export default {
     },
   },
   data: () => ({
-    flat: false,
+    flat: true,
     media: true,
     loading: false,
     actions: true,
-    outlined: false,
+    outlined: true,
     elevation: undefined,
     raised: false,
-    width: 344,
     height: undefined,
+    vertical: true,
   }),
 };
 </script>
