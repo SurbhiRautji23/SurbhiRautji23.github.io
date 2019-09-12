@@ -15,7 +15,11 @@
       <v-card-title class="headline" primary-title>{{ skills.key }}</v-card-title>
 
       <v-card-text color="secondary">
-        <v-chip class="caption" v-for="skill in skills.data" v-bind:key="skill">{{ skill }}</v-chip>
+        <v-chip class="caption" v-for="skill in skills.data" v-bind:key="skill">
+          {{ skill }}
+          <v-spacer px1></v-spacer>
+          <v-progress-circular :size="16" :value="20" :color="color"></v-progress-circular>
+        </v-chip>
       </v-card-text>
     </v-card>
     <v-divider :vertical="vertical" light></v-divider>
@@ -23,6 +27,9 @@
 </template>
 
 <script>
+// eslint-disable-next-line import/named
+import { proficiency } from '../data/resume.data';
+
 export default {
   name: 'SkillsComponent',
   props: {
@@ -47,6 +54,27 @@ export default {
     height: undefined,
     vertical: true,
   }),
+  methods: {
+    getColor: (skill) => {
+      let color = 'black';
+      switch (skill.proficiency) {
+        case proficiency.expert:
+          color = 'success';
+          break;
+        case proficiency.high:
+          color = 'blue';
+          break;
+        case proficiency.proficient:
+          color = 'orange';
+          break;
+        case proficiency.low:
+          color = 'magenta';
+          break;
+        default:
+          color = black;
+      }
+    },
+  },
 };
 </script>
 
