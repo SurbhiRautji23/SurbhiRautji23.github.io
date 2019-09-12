@@ -108,7 +108,7 @@ export default class ResumeData {
         designation: 'Software Quality Assurance Engineer (Contract)',
         jobDuties: [],
         skills: [],
-        description: '',
+        description: 'Client of Hanumayamma Innovations and Technologies, Inc',
       },
       {
         startDate: 'Sept, 2016',

@@ -10,6 +10,7 @@
       <span class="subtitle-1">{{experience.startDate}} - {{experience.endDate}}</span>
       <p class="subtitle-2">{{experience.designation}}</p>
       <p class="subtitle-2">{{experience.companyName}}</p>
+      <p class="body-1">{{experience.description}}</p>
     </v-timeline-item>
   </v-timeline>
 </div>

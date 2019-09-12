@@ -1,11 +1,15 @@
 <template>
-  <v-layout row wrap>
-    <v-flex xs12>
-      <v-img src="img/surbhi.png" height="200px" contain></v-img>
+<v-card class="py-5" color="lightblue" >
+  <v-layout row wrap fill-height>
+    <v-flex xs12  class="text-xs-center">
+      <v-avatar :size="160">
+        <img src="img/surbhi.png"/>
+      </v-avatar>
     </v-flex>
     <v-flex xs12>
-      <div class="headline text-xs-center">
-        <p>
+      <div class="text-xs-center">
+        <p>Surbhi Rautji</p>
+        <p class="title">
         Software Engineer with Expertise in QA and Automation Engineering
         </p>
         <v-divider :inset="divider.inset"></v-divider>
@@ -19,6 +23,7 @@
 
     </v-flex>
   </v-layout>
+  </v-card>
 </template>
 
 <script>

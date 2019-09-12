@@ -5,9 +5,12 @@
     <!-- <v-toolbar-title class="headline text-uppercase">
       <span>SURBHI RAUTJI</span>
     </v-toolbar-title>-->
-    <v-spacer></v-spacer>
     <v-toolbar-title text-center>
       <span class="font-weight-light">About Me</span>
+    </v-toolbar-title>
+    <v-spacer></v-spacer>
+    <v-toolbar-title text-center>
+      <span class="font-weight-light">@ surbhi.spartan90@gmail.com</span>
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>

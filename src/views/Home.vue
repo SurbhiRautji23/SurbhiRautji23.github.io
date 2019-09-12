@@ -13,12 +13,8 @@
       <v-flex xs12 sm4 md2>
         <introduction-component></introduction-component>
       </v-flex>
-      <v-divider
-      :vertical="divider.vertical"
-      :dark="divider.dark"
-      :inset="divider.inset">
-      </v-divider>
-      <v-flex xs-12 sm7 md9>
+      <v-divider :vertical="divider.vertical"></v-divider>
+      <v-flex xs-12 sm8 md10>
         <SectionTitleComponent :text="skills"></SectionTitleComponent>
         <v-layout row wrap>
           <v-flex
@@ -33,6 +29,8 @@
             <SkillsComponent :skills="tech" :s-img="tech.img"></SkillsComponent>
           </v-flex>
         </v-layout>
+         <v-divider>
+      </v-divider>
         <timeline></timeline>
       </v-flex>
     </v-layout>

@@ -17,10 +17,5 @@ export default {
     HeaderComponent,
     Home,
   },
-  data() {
-    return {
-      //
-    };
-  },
 };
 </script>
