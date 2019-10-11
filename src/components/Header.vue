@@ -14,7 +14,7 @@
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>
-      <v-btn flat href="SurbhiRautjiResume.pdf" target="_blank">
+      <v-btn flat href="Rautji_Surbhi.pdf" target="_blank">
         <span class="mr-2">Resume</span>
       </v-btn>
     </v-toolbar-items>
