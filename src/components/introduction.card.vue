@@ -2,9 +2,9 @@
 <v-card class="py-5 px-2" color="lightblue" >
   <v-layout row wrap fill-height>
     <v-flex xs12  class="text-xs-center">
-      <v-avatar :size="160">
+      <!--<v-avatar :size="160">
         <img src="img/profile.jpeg"/>
-      </v-avatar>
+      </v-avatar>-->
     </v-flex>
     <v-flex xs12>
       <div class="text-xs-center">
